@@ -1,0 +1,44 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000; /* Black background for the entire app */
+    color: #fff; /* White text for readability */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000; /* Change to black */
+    border-bottom: 1px solid #444; /* Optional: Darker border for separation */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #fff;
+}
+
+.featured-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #000; /* Change to black */
+    color: #fff; /* Ensure text is visible */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #fff;
+}
