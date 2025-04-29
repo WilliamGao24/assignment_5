@@ -1,22 +1,25 @@
 import './App.css';
-import Featured from './components/Featured.jsx';
-import Footer from './components/Footer.jsx';
-import Header from './components/Header.jsx';
-import Hero from './components/Hero.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeView from "./Views/HomeView.jsx";
+import RegisterView from "./Views/RegisterView.jsx";
+import LoginView from "./Views/LoginView.jsx";
+import MoviesView from "./Views/MoviesView.jsx";
+import DetailMovieView from "./Views/DetailView.jsx";
+import GenreView from "./Views/GenreView.jsx";
 
 function App() {
     return (
-        <div className="App">
-            <div className="header">
-                <div className="title">NXTFLIX</div>
-                <Header />
-            </div>
-            <Hero />
-            <div className="featured-section">
-                <Featured />
-            </div>
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomeView />} />
+                <Route path="/register" element={<RegisterView />} />
+                <Route path="/login" element={<LoginView />} />
+                <Route path="/movies" element={<MoviesView />}>
+                    <Route path="genre/:genre_id" element={<GenreView />} />
+                    <Route path="details/:id" element={<DetailMovieView />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 

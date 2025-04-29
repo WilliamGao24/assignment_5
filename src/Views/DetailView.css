@@ -1,0 +1,54 @@
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.movie-content {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.movie-info {
+    flex: 2;
+}
+
+.movie-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.movie-overview {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.movie-poster {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.trailers-section {
+    margin-top: 20px;
+}
+
+.trailers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.trailer-tile {
+    text-align: center;
+}
+
+.trailer-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

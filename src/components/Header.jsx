@@ -1,17 +1,15 @@
-import './Header.css'
+import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <div className="login">
-            <form>
-                <label className="username"> Username:</label>
-                <input type = "text"></input>
-                <label>Password:</label>
-                <input type = "password"></input>
-                <input className = "login-button" type = "button" value = "Register"></input>
-        </form>
-    </div >
-
+        <div className="header-container">
+            <div className="title">NXTFLIX</div>
+            <div className="login">
+                <Link to="/login" className="login-button">Login</Link>
+                <Link to="/register" className="register-button">Register</Link>
+            </div>
+        </div>
     );
 }
 
