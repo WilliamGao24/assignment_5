@@ -5,6 +5,7 @@ import Header from "../components/Header";
 
 function LoginView() {
     const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
     const navigate = useNavigate();
 
     function login(event) {
@@ -22,23 +23,34 @@ function LoginView() {
             <div className="form-container">
                 <h2>Login to Your Account</h2>
                 <form onSubmit={login}>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" id="email" name="email" required />
+                    <div className="form-group">
+                        <label htmlFor="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="password">Password</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        value={password}
-                        onChange={(event) => setPassword(event.target.value)}
-                        required
-                    />
+                    <div className="form-group">
+                        <label htmlFor="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
 
                     <button type="submit" className="login-button">Login</button>
                 </form>
                 <p className="register-link">
-                    New to Netflix? <Link to="/register">Register Now</Link>
+                    New to Nxtflix? <Link to="/register">Register Now</Link>
                 </p>
             </div>
         </div>

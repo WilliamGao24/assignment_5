@@ -1,0 +1,26 @@
+.home-view {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.movie-container {
+    width: 100%;
+    max-width: 900px; /* Reduced from 1200px to make it narrower */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+}

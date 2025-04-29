@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeView from "./Views/HomeView.jsx";
 import RegisterView from "./Views/RegisterView.jsx";
 import LoginView from "./Views/LoginView.jsx";
-import MoviesView from "./Views/MoviesView.jsx";
+import MoviesView from './Views/MoviesView.jsx';
 import DetailMovieView from "./Views/DetailView.jsx";
 import GenreView from "./Views/GenreView.jsx";
 
