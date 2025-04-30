@@ -1,14 +1,23 @@
 import "./RegisterView.css";
 import Header from "../components/Header";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function RegisterView() {
+    const navigate = useNavigate();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // Here you would typically handle the registration logic
+        // For now, we'll just redirect to movies view
+        navigate('/movies');
+    };
+
     return (
         <div className="register-container">
             <Header />
             <div className="form-container">
                 <h2>Create an Account</h2>
-                <form action="#" method="POST">
+                <form onSubmit={handleSubmit}>
                     <label htmlFor="first-name">First Name</label>
                     <input type="text" id="first-name" name="first-name" required />
 

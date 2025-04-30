@@ -15,9 +15,20 @@
 
 .movie-container {
     width: 100%;
-    max-width: 900px; /* Reduced from 1200px to make it narrower */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-card {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto; /* Center each card */
 }
 
 .footer {
