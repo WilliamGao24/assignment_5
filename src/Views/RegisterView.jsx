@@ -7,8 +7,6 @@ function RegisterView() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Here you would typically handle the registration logic
-        // For now, we'll just redirect to movies view
         navigate('/movies');
     };
 
